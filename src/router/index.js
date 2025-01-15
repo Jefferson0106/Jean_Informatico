@@ -7,6 +7,10 @@ import RTL from "../views/Rtl.vue";
 import Profile from "../views/Profile.vue";
 import Signup from "../views/Signup.vue";
 import Signin from "../views/Signin.vue";
+import ProductoRc from "../views/ProductoRc.vue";
+import RegistroPerfil   from "../views/RegistroPerfil.vue";
+import PerfilEditar from "../views/PerfilEditar.vue";
+import UsuarioRegistro from "../views/UsuarioRegistro.vue";
 
 const routes = [
   {
@@ -25,9 +29,25 @@ const routes = [
     component: Tables,
   },
   {
+    path: "/RegistroPerfil",
+    name: "RegistroPerfil",
+    component: RegistroPerfil,
+  },
+  { path: '/PerfilEditar/:idPerfil', name: 'PerfilEditar', component: PerfilEditar },
+  {
     path: "/billing",
     name: "Billing",
     component: Billing,
+  },
+  {
+    path: "/UsuarioRegistro",
+    name: "UsuarioRegistro",
+    component: UsuarioRegistro,
+  },
+  {
+    path: "/productorc",
+    name: "ProductoRc",
+    component: ProductoRc,
   },
   {
     path: "/virtual-reality",
